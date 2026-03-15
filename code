@@ -50,33 +50,26 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    // 1. Вызывается при создании Activity
-
-    // 2. Activity становится видимой
     override fun onStart() {
         super.onStart()
         Log.d(TAG, "onStart: Activity видна")
     }
 
-    // 3. Activity получает фокус (взаимодействие с пользователем)
     override fun onResume() {
         super.onResume()
         Log.d(TAG, "onResume: Activity в фокусе")
     }
 
-    // 4. Частичное перекрытие (например, диалог)
     override fun onPause() {
         super.onPause()
         Log.d(TAG, "onPause: Activity приостановлена")
     }
 
-    // 5. Activity больше не видна
     override fun onStop() {
         super.onStop()
         Log.d(TAG, "onStop: Activity скрыта")
     }
 
-    // 6. Activity уничтожается (освобождение ресурсов)
     override fun onDestroy() {
         super.onDestroy()
         Log.d(TAG, "onDestroy: Activity уничтожена")
